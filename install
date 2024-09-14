@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ -d "$HOME/.icons/HypnOS" ]; then
+    echo 'Existing installation detected, removing...'
+    rm -rf "$HOME/.icons/HypnOS"
+fi
+
+temp_dir=$(mktemp -d)
+
+if command -v git &> /dev/null; then
+    git clone https://github.com/Bergbok/HypnOS-Linux-Cursor.git "$temp_dir"/HypnOS-Linux-Cursor 2>&1 | grep "Cloning into"
+else
+    echo 'Error: git is not installed. Falling back to curl...'
+    if command -v curl &> /dev/null; then
+        echo "Downloading into $temp_dir..."
+        curl -fsSL -o "$temp_dir"/HypnOS-Linux-Cursor.zip https://github.com/Bergbok/HypnOS-Linux-Cursor/archive/refs/heads/main.zip
+        unzip -q "$temp_dir"/HypnOS-Linux-Cursor.zip -d "$temp_dir"
+        mv "$temp_dir"/HypnOS-Linux-Cursor-main "$temp_dir"/HypnOS-Linux-Cursor
+    else
+        echo 'Error: curl is not installed. Please install git or curl and try again.'
+        exit 1
+    fi
+fi
+
+echo 'Moving cursor to ~/.icons/HypnOS...'
+
+mv "$temp_dir"/HypnOS-Linux-Cursor/cursor/HypnOS ~/.icons/
+
+echo "Removing $temp_dir..."
+
+rm -rf "$temp_dir"
+
+echo ''
+echo 'Successfully installed cursor!'
+echo 'To apply, use your desktop environment settings.'
