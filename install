@@ -2,9 +2,16 @@
 
 set -e
 
-if [ -d "$HOME/.icons/HypnOS" ]; then
-    echo 'Existing installation detected, removing...'
-    rm -rf "$HOME/.icons/HypnOS"
+if [ -d ~/.icons/HypnOS ]; then
+    echo 'Existing installation detected.'
+    read -p 'Do you want to replace the existing installation? [y/N]: ' confirm
+    if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
+        echo 'Removing existing installation...'
+        rm -rf ~/.icons/HypnOS
+    else
+        echo 'Aborting installation.'
+        exit 1
+    fi
 fi
 
 temp_dir=$(mktemp -d)
@@ -20,7 +27,7 @@ else
         mv "$temp_dir"/HypnOS-Linux-Cursor-main "$temp_dir"/HypnOS-Linux-Cursor
     else
         echo 'Error: curl is not installed. Please install git or curl and try again.'
-        exit 1
+        exit 127
     fi
 fi
 
