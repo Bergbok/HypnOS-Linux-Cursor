@@ -4,34 +4,35 @@
 
 <table align='center'>
     <tr>
-        <td><p align='center'><img src='src/assets/default.png'></p></td>
-        <td><p align='center'><img src='src/assets/help.png'></p></td>
-        <td><p align='center'><img src='src/assets/progress.gif'></p></td>
-        <td><p align='center'><img src='src/assets/wait.gif'></p></td>
+        <td><p align='center'><img src='src/assets/default.png' alt='default cursor'></p></td>
+        <td><p align='center'><img src='src/assets/help.png' alt='help cursor'></p></td>
+        <td><p align='center'><img src='src/assets/progress.gif' alt='progress cursor'></p></td>
+        <td><p align='center'><img src='src/assets/wait.gif' alt='hourglass loading cursor'></p></td>
     </tr>
     <tr>
-        <td><p align='center'><img src='src/assets/pointer_click.gif'></p></td>
-        <td><p align='center'><img src='src/assets/openhand.png'></p></td>
-        <td><p align='center'><img src='src/assets/closedhand.png'></p></td>
-        <td><p align='center'><img src='src/assets/all-scroll.png' alt='Image 10'></p></td>
+        <td><p align='center'><img src='src/assets/pointer_click.gif' alt='pointer click cursor'></p></td>
+        <td><p align='center'><img src='src/assets/openhand.png' alt='open hand cursor'></p></td>
+        <td><p align='center'><img src='src/assets/closedhand.png' alt='closed hand cursor'></p></td>
+        <td><p align='center'><img src='src/assets/all-scroll.png' alt='all scroll cursor'></p></td>
     </tr>
     <tr>
-        <td><p align='center'><img src='src/assets/pencil.png' alt='Image 27'></p></td>
-        <td><p align='center'><img src='src/assets/text.png' alt='Image 25'></p></td>
-        <td><p align='center'><img src='src/assets/vertical-text.png' alt='Image 26'></p></td>
-        <td><p align='center'><img src='src/assets/crosshair.png' alt='Image 28'></p></td>
-    </tr>
-        <tr>
-        <td><p align='center'><img src='src/assets/left-arrow.png' alt='Image 13'></p></td>
-        <td><p align='center'><img src='src/assets/up-arrow.png' alt='Image 14'></p></td>
-        <td><p align='center'><img src='src/assets/down-arrow.png' alt='Image 15'></p></td>
-        <td><p align='center'><img src='src/assets/right-arrow.png' alt='Image 16'></p></td>
+        <td><p align='center'><img src='src/assets/pencil.png' alt='pencil cursor'></p></td>
+        <td><p align='center'><img src='src/assets/text.png' alt='text cursor'></p></td>
+        <td><p align='center'><img src='src/assets/vertical-text.png' alt='vertical text cursor'></p></td>
+        <td><p align='center'><img src='src/assets/crosshair.png' alt='crosshair cursor'></p></td>
     </tr>
     <tr>
-        <td><p align='center'><img src='src/assets/size_fdiag.png' alt='Image 19'></p></td>
-        <td><p align='center'><img src='src/assets/size_ver.png' alt='Image 21'></p></td>
-        <td><p align='center'><img src='src/assets/size_hor.png' alt='Image 20'></p></td>
-        <td><p align='center'><img src='src/assets/size_bdiag.png' alt='Image 22'></p></td>
+        <td><p align='center'><img src='src/assets/left-arrow.png' alt='left arrow cursor'></p></td>
+        <td><p align='center'><img src='src/assets/up-arrow.png' alt='up arrow cursor'></p></td>
+        <td><p align='center'><img src='src/assets/down-arrow.png' alt='down arrow cursor'></p></td>
+        <td><p align='center'><img src='src/assets/right-arrow.png' alt='right arrow cursor'></p></td>
+    </tr>
+    <tr>
+        <td><p align='center'><img src='src/assets/size_fdiag.png' alt='left to right diagonal resize cursor'></p></td>
+        <td><p align='center'><img src='src/assets/size_ver.png' alt='vertical resize cursor'></p></td>
+        <td><p align='center'><img src='src/assets/size_hor.png' alt='horizontal resize cursor'></p></td>
+        <td><p align='center'><img src='src/assets/size_bdiag.png' alt='right to left diagonal resize cursor'></p></td>
+    </tr>
     </tr>
 </table>
 
@@ -44,7 +45,7 @@
     - ~/.icons/
     - ~/.local/share/icons/
     - /usr/share/icons/
-3. Select the cursor through your system's settings.
+3. Select the cursor using your system's settings.
 
 ## Install Script
 
